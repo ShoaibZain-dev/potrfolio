@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E234A" />
+      <stop offset="60%" stop-color="#08142A" />
+      <stop offset="100%" stop-color="#030814" />
+    </linearGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#0066FF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0066FF" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowPulse" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="transparent" />
+
+  <!-- World Grid Spherical Outlines / Latitude & Longitude -->
+  <g transform="translate(450, 300)" opacity="0.35" stroke="#00D2FF" fill="none">
+    <!-- Globe Circle Outer -->
+    <circle r="240" stroke-width="2" />
+    <circle r="180" stroke-width="1.2" stroke-dasharray="4, 4" />
+    <circle r="120" stroke-width="1" stroke-dasharray="2, 4" />
+
+    <!-- Latitude Ellipses -->
+    <ellipse rx="240" ry="60" stroke-width="1" />
+    <ellipse rx="240" ry="120" stroke-width="1" />
+    <ellipse rx="240" ry="180" stroke-width="1" />
+    
+    <!-- Longitude Ellipses -->
+    <ellipse rx="70" ry="240" stroke-width="1" />
+    <ellipse rx="150" ry="240" stroke-width="1" />
+  </g>
+
+  <!-- World Map Stylized Dots / Constellations -->
+  <!-- North America (USA / Canada) -->
+  <g id="na-hub" transform="translate(230, 200)">
+    <circle cx="0" cy="0" r="8" fill="#0066FF" filter="url(#glowPulse)" />
+    <circle cx="0" cy="0" r="4" fill="#00D2FF" />
+    <rect x="-60" y="-38" width="120" height="26" rx="13" fill="#061226" stroke="#00D2FF" stroke-width="1" />
+    <text x="0" y="-21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">USA &amp; Canada</text>
+  </g>
+
+  <!-- UK & Europe Hub -->
+  <g id="eu-hub" transform="translate(440, 170)">
+    <circle cx="0" cy="0" r="8" fill="#0066FF" filter="url(#glowPulse)" />
+    <circle cx="0" cy="0" r="4" fill="#00D2FF" />
+    <rect x="-60" y="-38" width="120" height="26" rx="13" fill="#061226" stroke="#00D2FF" stroke-width="1" />
+    <text x="0" y="-21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">UK &amp; Europe</text>
+  </g>
+
+  <!-- Middle East / UAE Hub -->
+  <g id="gulf-hub" transform="translate(520, 265)">
+    <circle cx="0" cy="0" r="8" fill="#0066FF" filter="url(#glowPulse)" />
+    <circle cx="0" cy="0" r="4" fill="#00D2FF" />
+    <rect x="-55" y="-38" width="110" height="26" rx="13" fill="#061226" stroke="#00D2FF" stroke-width="1" />
+    <text x="0" y="-21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">UAE &amp; Gulf</text>
+  </g>
+
+  <!-- Australia Hub -->
+  <g id="aus-hub" transform="translate(720, 420)">
+    <circle cx="0" cy="0" r="8" fill="#0066FF" filter="url(#glowPulse)" />
+    <circle cx="0" cy="0" r="4" fill="#00D2FF" />
+    <rect x="-50" y="-38" width="100" height="26" rx="13" fill="#061226" stroke="#00D2FF" stroke-width="1" />
+    <text x="0" y="-21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Australia</text>
+  </g>
+
+  <!-- CENTRAL ORIGIN HUB: JHELUM, PAKISTAN -->
+  <g id="jhelum-center" transform="translate(560, 240)">
+    <!-- Radiating Signal Rings -->
+    <circle cx="0" cy="0" r="50" fill="url(#hubGlow)" opacity="0.6" />
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="3, 3" />
+    <circle cx="0" cy="0" r="18" fill="#0066FF" filter="url(#glowPulse)" />
+    <circle cx="0" cy="0" r="8" fill="#FFFFFF" />
+
+    <!-- Floating Badge -->
+    <rect x="-110" y="24" width="220" height="46" rx="10" fill="#061226" stroke="#00D2FF" stroke-width="2" filter="url(#glowPulse)" />
+    <circle cx="-85" cy="47" r="5" fill="#00E676" />
+    <text x="-70" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">Jhelum, Pakistan</text>
+    <text x="-70" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#00D2FF">Headquarters &amp; Creative Studio</text>
+  </g>
+
+  <!-- Connection Arcs (Jhelum to Hubs) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- To USA -->
+    <path d="M560 240 Q390 100 230 200" stroke="#00D2FF" stroke-width="2.5" stroke-dasharray="8, 6" />
+    <circle cx="395" cy="150" r="4" fill="#00D2FF" />
+
+    <!-- To Europe / UK -->
+    <path d="M560 240 Q500 160 440 170" stroke="#00D2FF" stroke-width="2.5" stroke-dasharray="6, 5" />
+
+    <!-- To UAE -->
+    <path d="M560 240 Q540 260 520 265" stroke="#00D2FF" stroke-width="2.5" stroke-dasharray="4, 4" />
+
+    <!-- To Australia -->
+    <path d="M560 240 Q660 310 720 420" stroke="#00D2FF" stroke-width="2.5" stroke-dasharray="8, 6" />
+    <circle cx="640" cy="330" r="4" fill="#00D2FF" />
+  </g>
+</svg>

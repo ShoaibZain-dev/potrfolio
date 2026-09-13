@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E234A" />
+      <stop offset="40%" stop-color="#08142A" />
+      <stop offset="100%" stop-color="#030814" />
+    </linearGradient>
+
+    <!-- Studio Rim Light Glow -->
+    <radialGradient id="rimGlow" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#0066FF" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bottomGlow" cx="50%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Skin Tones -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2A77A" />
+      <stop offset="60%" stop-color="#D08E5F" />
+      <stop offset="100%" stop-color="#B87548" />
+    </linearGradient>
+
+    <linearGradient id="skinShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B87548" />
+      <stop offset="100%" stop-color="#9C5E35" />
+    </linearGradient>
+
+    <!-- Hair Tone -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1F17" />
+      <stop offset="40%" stop-color="#1B120C" />
+      <stop offset="100%" stop-color="#0D0906" />
+    </linearGradient>
+
+    <!-- Blazer Suit -->
+    <linearGradient id="blazerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192A4D" />
+      <stop offset="50%" stop-color="#0E1932" />
+      <stop offset="100%" stop-color="#070C1B" />
+    </linearGradient>
+
+    <!-- Shirt -->
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2F6FC" />
+      <stop offset="100%" stop-color="#CBD8EA" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="700" fill="url(#bgGrad)" />
+  <circle cx="450" cy="200" r="280" fill="url(#rimGlow)" />
+  <rect y="400" width="600" height="300" fill="url(#bottomGlow)" />
+
+  <!-- Subtle Studio Grid Backdrop -->
+  <g opacity="0.08" stroke="#00D2FF" stroke-width="1">
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="400" x2="600" y2="400" />
+    <line x1="0" y1="500" x2="600" y2="500" />
+    <line x1="100" y1="0" x2="100" y2="700" />
+    <line x1="200" y1="0" x2="200" y2="700" />
+    <line x1="300" y1="0" x2="300" y2="700" />
+    <line x1="400" y1="0" x2="400" y2="700" />
+    <line x1="500" y1="0" x2="500" y2="700" />
+  </g>
+
+  <!-- Glowing Abstract Halo Behind Head -->
+  <circle cx="300" cy="280" r="170" fill="none" stroke="#0066FF" stroke-width="2" opacity="0.3" />
+  <circle cx="300" cy="280" r="190" fill="none" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="6, 10" opacity="0.4" />
+
+  <!-- Body / Shoulders / Blazer -->
+  <g id="body">
+    <!-- Back Collar & Shirt -->
+    <path d="M230 380 L370 380 L395 500 L205 500 Z" fill="url(#shirtGrad)" />
+    <path d="M275 375 L300 450 L325 375 Z" fill="#0E1932" />
+    <!-- Inner Shirt V -->
+    <polygon points="275,375 300,465 325,375" fill="#FFFFFF" />
+
+    <!-- Blazer Jacket -->
+    <!-- Left Shoulder -->
+    <path d="M120 700 L120 540 C120 480 180 435 240 420 L275 580 L200 700 Z" fill="url(#blazerGrad)" />
+    <!-- Right Shoulder -->
+    <path d="M480 700 L480 540 C480 480 420 435 360 420 L325 580 L400 700 Z" fill="url(#blazerGrad)" />
+    <!-- Front Coat Body -->
+    <path d="M200 700 L245 420 L300 520 L355 420 L400 700 Z" fill="#0A1426" />
+    <!-- Lapels -->
+    <polygon points="245,420 280,530 220,530" fill="#1C3058" />
+    <polygon points="355,420 320,530 380,530" fill="#152648" />
+
+    <!-- Electric Blue Pocket Square / Accent -->
+    <path d="M380 545 L415 540 L418 555 L383 558 Z" fill="#0066FF" />
+    <line x1="380" y1="540" x2="415" y2="537" stroke="#00D2FF" stroke-width="2" />
+  </g>
+
+  <!-- Neck -->
+  <g id="neck">
+    <path d="M260 330 L340 330 L345 400 C345 420 255 420 255 400 Z" fill="url(#skinShadow)" />
+    <path d="M265 330 L335 330 L330 385 C330 405 270 405 270 385 Z" fill="url(#skinGrad)" />
+    <!-- Throat Shadow -->
+    <path d="M285 360 C300 375 315 360 315 360 C310 380 290 380 285 360 Z" fill="#9C5E35" opacity="0.6" />
+  </g>
+
+  <!-- Head Base -->
+  <g id="head">
+    <!-- Ears -->
+    <ellipse cx="205" cy="285" rx="14" ry="24" fill="url(#skinShadow)" />
+    <ellipse cx="206" cy="285" rx="10" ry="17" fill="url(#skinGrad)" />
+    <ellipse cx="395" cy="285" rx="14" ry="24" fill="url(#skinShadow)" />
+    <ellipse cx="394" cy="285" rx="10" ry="17" fill="url(#skinGrad)" />
+
+    <!-- Face Shape -->
+    <path d="M215 250 C215 170 385 170 385 250 C385 315 365 375 300 375 C235 375 215 315 215 250 Z" fill="url(#skinGrad)" />
+
+    <!-- Cheek & Jawline Shadows -->
+    <path d="M225 290 C240 345 270 365 300 370 C330 365 360 345 375 290 C355 350 330 360 300 363 C270 360 245 350 225 290 Z" fill="#9C5E35" opacity="0.3" />
+
+    <!-- Well-Groomed Stubble / Short Beard -->
+    <path d="M220 280 C220 350 250 375 300 375 C350 375 380 350 380 280 C375 335 345 368 300 368 C255 368 225 335 220 280 Z" fill="#1C120C" opacity="0.28" />
+    <path d="M270 340 C285 348 315 348 330 340 C325 352 275 352 270 340 Z" fill="#1C120C" opacity="0.25" />
+
+    <!-- Nose -->
+    <path d="M300 235 L292 295 L308 295 Z" fill="url(#skinShadow)" opacity="0.3" />
+    <path d="M294 290 C290 297 310 297 306 290" stroke="#9C5E35" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <ellipse cx="292" cy="293" rx="3.5" ry="2" fill="#784423" />
+    <ellipse cx="308" cy="293" rx="3.5" ry="2" fill="#784423" />
+
+    <!-- Eyebrows -->
+    <path d="M240 225 C255 218 275 220 285 228" stroke="#1B120C" stroke-width="5" stroke-linecap="round" fill="none" />
+    <path d="M360 225 C345 218 325 220 315 228" stroke="#1B120C" stroke-width="5" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <!-- Left Eye -->
+      <path d="M245 245 C255 237 275 237 283 245 C275 253 255 253 245 245 Z" fill="#FFFFFF" />
+      <circle cx="265" cy="245" r="7.5" fill="#2F1C12" />
+      <circle cx="265" cy="245" r="4.5" fill="#0C0704" />
+      <circle cx="267" cy="243" r="2.2" fill="#FFFFFF" />
+      <path d="M244 244 C255 236 275 236 284 244" stroke="#1C120C" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+      <!-- Right Eye -->
+      <path d="M317 245 C325 237 345 237 355 245 C345 253 325 253 317 245 Z" fill="#FFFFFF" />
+      <circle cx="335" cy="245" r="7.5" fill="#2F1C12" />
+      <circle cx="335" cy="245" r="4.5" fill="#0C0704" />
+      <circle cx="337" cy="243" r="2.2" fill="#FFFFFF" />
+      <path d="M316 244 C325 236 345 236 356 244" stroke="#1C120C" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Friendly Smile -->
+    <g id="mouth">
+      <path d="M272 322 C285 338 315 338 328 322" stroke="#8C4423" stroke-width="3" fill="none" stroke-linecap="round" />
+      <!-- Subtle Teeth White Accent -->
+      <path d="M278 323 C288 331 312 331 322 323 Z" fill="#FFFFFF" opacity="0.9" />
+      <!-- Lower Lip -->
+      <path d="M280 330 C292 338 308 338 320 330" stroke="#C47352" stroke-width="3" fill="none" stroke-linecap="round" />
+    </g>
+
+    <!-- Hair (Modern Pompadour / Clean Side Fade) -->
+    <path d="M210 230 C205 190 220 135 270 120 C330 100 375 125 390 160 C400 190 395 230 390 245 C385 220 375 190 350 180 C320 170 260 175 240 215 C230 235 220 245 210 230 Z" fill="url(#hairGrad)" />
+    <!-- Volume & Texture Strands -->
+    <path d="M235 155 C265 125 320 115 365 140 C340 125 290 120 250 140 Z" fill="#3D291D" />
+    <path d="M260 140 C300 115 350 125 375 155 C355 135 315 125 275 135 Z" fill="#4E3425" />
+    <!-- Clean Sideburns -->
+    <path d="M212 230 L215 275 L222 265 L220 230 Z" fill="url(#hairGrad)" />
+    <path d="M388 230 L385 275 L378 265 L380 230 Z" fill="url(#hairGrad)" />
+  </g>
+
+  <!-- Rim Lighting Glow Effects on Right Edge -->
+  <path d="M390 170 C398 220 395 280 380 340 L385 360 C395 310 400 240 390 170 Z" fill="#00D2FF" opacity="0.4" filter="url(#neonFilter)" />
+  <path d="M480 540 C460 480 430 445 370 425" stroke="#00D2FF" stroke-width="3" fill="none" opacity="0.6" filter="url(#neonFilter)" />
+
+  <!-- Floating Holographic Badge (Smart Tech / Designer) -->
+  <g transform="translate(420, 380)" filter="url(#neonFilter)">
+    <rect width="140" height="42" rx="21" fill="#061226" stroke="#00D2FF" stroke-width="1.5" opacity="0.9" />
+    <circle cx="22" cy="21" r="8" fill="#0066FF" />
+    <circle cx="22" cy="21" r="4" fill="#00D2FF" />
+    <text x="38" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Solutions Ready</text>
+  </g>
+</svg>

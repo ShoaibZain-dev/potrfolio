@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Shoaib — Solutions Beyond Design
+   Responsive Stylesheet & Mobile Drawer
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (<= 1100px) */
+@media screen and (max-width: 1100px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .skills-grid,
+  .why-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .local-categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* Medium Tablets & Mobile Navigation (<= 992px) */
+@media screen and (max-width: 992px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  /* Mobile Navigation Drawer */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: rgba(6, 14, 32, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 32px 40px 32px;
+    gap: 20px;
+    border-left: 1px solid rgba(0, 210, 255, 0.2);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.8);
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .header-actions .btn-header-cta {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 120px 0 70px 0;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .portrait-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  /* About Section */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* International Section */
+  .intl-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Contact Wrapper */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    padding: 36px;
+    gap: 40px;
+  }
+
+  .local-intro-banner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 36px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Tablets & Large Phones (<= 768px) */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .local-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-header-img {
+    height: 220px;
+  }
+
+  .modal-body {
+    padding: 24px;
+  }
+
+  .floating-badge {
+    padding: 8px 12px;
+  }
+
+  .badge-top-right {
+    right: 0;
+    top: 10px;
+  }
+
+  .badge-bottom-left {
+    left: 0;
+    bottom: 10px;
+  }
+}
+
+/* Mobile Phones (<= 560px) */
+@media screen and (max-width: 560px) {
+  .section {
+    padding: 55px 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .skills-grid,
+  .why-grid,
+  .process-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-trust-bar {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .service-card {
+    padding: 26px 20px;
+  }
+
+  .service-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrapper {
+    padding: 20px;
+  }
+
+  .contact-form-panel {
+    padding: 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .floating-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Small Phones (<= 380px) */
+@media screen and (max-width: 380px) {
+  .local-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+}

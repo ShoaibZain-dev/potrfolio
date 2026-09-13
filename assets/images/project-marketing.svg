@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mktBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050F22" />
+      <stop offset="50%" stop-color="#0B1A36" />
+      <stop offset="100%" stop-color="#030814" />
+    </linearGradient>
+    <filter id="mktGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#mktBg)" />
+  <circle cx="200" cy="120" r="180" fill="#0066FF" opacity="0.12" filter="url(#mktGlow)" />
+
+  <g transform="translate(100, 50)">
+    <!-- Main Board -->
+    <rect width="600" height="380" rx="16" fill="#08142A" stroke="#162E58" stroke-width="1.5" filter="url(#mktGlow)" />
+
+    <!-- Header bar -->
+    <rect width="600" height="46" rx="16" fill="#0E2145" />
+    <text x="25" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">NOVATECH GLOBAL REBRANDING</text>
+    <text x="470" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#00D2FF">Marketing Kit 2026</text>
+
+    <!-- Social Media Post 1 (Instagram Square) -->
+    <g transform="translate(35, 75)">
+      <rect width="160" height="200" rx="12" fill="#0D1F3F" stroke="#00D2FF" stroke-width="1.5" />
+      <rect x="15" y="20" width="130" height="90" rx="8" fill="#16305C" />
+      <circle cx="80" cy="65" r="22" fill="#0066FF" />
+      <text x="80" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">N</text>
+      <text x="20" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">Scale Your Enterprise</text>
+      <text x="20" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#8FA6CC">Cloud architecture made simple</text>
+      <rect x="20" y="162" width="60" height="18" rx="4" fill="#00D2FF" />
+      <text x="30" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="800" fill="#050C1B">Learn More</text>
+    </g>
+
+    <!-- Social Media Post 2 (Announcement Carousel) -->
+    <g transform="translate(220, 75)">
+      <rect width="160" height="200" rx="12" fill="#0D1F3F" stroke="#0066FF" stroke-width="1.5" />
+      <rect x="15" y="20" width="130" height="90" rx="8" fill="#071328" />
+      <text x="30" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="900" fill="#00D2FF">+350%</text>
+      <text x="30" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Client Engagement</text>
+      <text x="20" y="132" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">Proven Performance</text>
+      <text x="20" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#8FA6CC">Quarterly marketing metrics</text>
+      <circle cx="30" cy="172" r="4" fill="#0066FF" />
+      <circle cx="44" cy="172" r="4" fill="#00D2FF" />
+      <circle cx="58" cy="172" r="4" fill="#8FA6CC" />
+    </g>
+
+    <!-- Brochure Tri-fold visual -->
+    <g transform="translate(405, 75)">
+      <rect width="160" height="200" rx="12" fill="#091730" stroke="#1F3E75" stroke-width="1" />
+      <rect x="15" y="20" width="40" height="160" fill="#0E2145" />
+      <rect x="60" y="20" width="40" height="160" fill="#142B59" />
+      <rect x="105" y="20" width="40" height="160" fill="#0E2145" />
+      <text x="65" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#00D2FF" transform="rotate(90 65 70)">BROCHURE</text>
+    </g>
+
+    <!-- Bottom summary bar -->
+    <g transform="translate(35, 295)">
+      <rect width="530" height="60" rx="10" fill="#0B1B38" stroke="#162E58" stroke-width="1" />
+      <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Deliverables Provided:</text>
+      <text x="20" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8FA6CC">Brand Guidelines • 40+ Social Post Templates • Pitch Deck • Business Cards • Rollup Banners</text>
+    </g>
+  </g>
+</svg>
